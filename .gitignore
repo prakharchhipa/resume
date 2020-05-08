@@ -4,3 +4,4 @@ _site
 local
 .idea
 *.iml
+.jekyll-cache
