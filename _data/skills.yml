@@ -1,0 +1,46 @@
+
+- title: Languages
+  items:
+    - name: Java
+      level: 4
+    - name: Python
+      level: 3
+    - name: javascript
+      level: 3
+    - name: NodeJS
+      level: 1
+
+- title: Database
+  items:
+    - name: redis
+      level: 4
+    - name: PostgreSQL
+      level: 3
+    - name: MongoDB
+      level: 3
+    - name: elasticsearch
+      level: 3
+
+- title: Frameworks
+  items:
+    - name: Spring
+      level: 4
+    - name: jQuery
+      level: 3
+    - name: Angular2
+      level: 2
+    - name: Bootstrap
+      level: 3
+
+- title: Misc
+  items:
+    - name: Jekyll
+      level: 3
+    - name: Scrapy
+      level: 1
+    - name: Designing
+      level: 2
+    - name: RabbitMQ
+      level: 2
+    - name: git
+      level: 4

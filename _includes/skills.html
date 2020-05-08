@@ -1,0 +1,25 @@
+
+<!-- skills -->
+  <div class="category skills">
+    <div class="cat-title">
+      <span class="cat-name">Skills</span>
+      <span class="cat-head-line"></span>
+    </div>
+    <div class="cat-body">
+
+      <div class="listing horiz-list">
+        {% for skill in site.data.skills %}
+        <span class="network">
+          <span class="name">{{ skill.title }}</span>
+          {% for i in skill.items %}
+          <span class="username">{{ i.name }}</a></span>
+          {% endfor %}
+        </span>
+        {% endfor %}
+      </div>
+
+
+
+    </div>
+  </div>
+<!-- end -->
