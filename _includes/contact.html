@@ -1,0 +1,18 @@
+<!-- contact -->
+  <div class="category contact">
+
+      <div class="listing horiz-list">
+      {% for c in site.data.contact %}
+        <span class="network">
+          {% for i in c.items %}
+            <span class="username">
+              <i class="{{i.icon}} fa-pull-left fa-border"></i> <a href="{{ i.link }}"> {{ i.label }}</a>
+            </span>
+          {% endfor %}
+        </span>
+      {% endfor %}
+      </div>
+
+    </div>
+  </div>
+<!-- end -->

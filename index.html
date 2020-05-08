@@ -1,295 +1,74 @@
+---
+---
 
-<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Resume</title>
-    <meta name="description" content="Technical blog which contains concepts of  web development, architecture and many more from Java stack.
-">
-    <meta name="keywords" content="java, J2EE, spring mvc, spring framework, tomcat, mongodb, solr, redis, openshift,android,c">
+<meta charset="UTF-8">
+<title>{{ site.title }}</title>
+<meta name="viewport" content="width=device-width">
+<meta name="author" content="Prakhar Chhipa">
+<link rel="author" href="https://www.prakharchhipa.in">
+<link rel="icon"
+	  type="image/png"
+	  href="/images/me-fav.png">
+<meta name="description" content="{{ site.description }}">
 
-    <link rel="stylesheet" href='main.css'>
-    <link rel="canonical" href="https://www.google.com">
+{% assign islocal = false %}
+{% for static_file in site.static_files %}
+  {% if static_file.path == '/local' %}
+    {% assign islocal = true %}
+  {% endif %}
+{% endfor %}
+
+{% if islocal == true %}
+<link rel="stylesheet" href="assets/oxygen.css" />
+<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+{% else %}
+<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+{% endif %}
+
+<link rel="stylesheet" href="assets/main.css"/>
+
+{% if islocal == false %}
+<!-- google analytics code -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-160598059-1', 'auto');
+  ga('send', 'pageview');
+</script>
+{% endif %}
+
 </head>
 
-<link rel="stylesheet" href='resume.css'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
 
-<body lang="en">
-<div class="wrapper">
+<div id="header" class="header">
+  <div class="header-container">
+	  <div class="flex-left">
+		  <h1>Prakhar Chhipa</h1>
+		  <span class="tagline">Senior Software Engineer</span>
+		  <span class="header-desc">5+ years of experience In Software Development/Design in Telecom, Internet, Affiliate, Research and Digital product base domain.</span>
+	  </div>
+	  <div class="flex-right">
+		  {% include contact.html %}
+	    <!--<img class="pic" src="images/2016-03.jpg"></img>-->
+	  </div>
+  </div>
+</div>
+
+<div id="content">
+	{% include work.html %}
+	{% include skills.html %}
+	{% include projects.html %}
+	{% include education.html %}
 
 </div>
-<section id="main">
-    <header id="title">
-        <h1>Prakhar Chhipa</h1>
-        <span class="subtitle">Senior Software Engineer</span>
-    </header>
-    <section class="main-block">
-        <h2>
-            <i class="fa fa-suitcase"></i> Experiences
-        </h2>
-        <section class="blocks">
-            <div class="date">
-                <span>May 2018</span><span>present</span>
-            </div>
-            <div class="decorator">
-            </div>
-            <div class="details">
-                <header>
-                    <h3>Senior Software Engineer</h3>
-                    <span class="place">Airtel X Labs</span>
-                    <span class="location">Gurgaon, Haryana, India</span>
-                </header>
-                <div>
-                    <ul>
-                        <li>Currently working as backend developer on customer care automation engine Decision Tree.</li>
-                       	<li> Technologies used: Java, MongoDb , Redis, Elasticsearch, Swagger, Spring
-                            Framework</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="blocks">
-            <div class="date">
-                <span>June 2015</span><span>May 2018</span>
-            </div>
-            <div class="decorator">
-            </div>
-            <div class="details">
-                <header>
-                    <h3>Software Engineer</h3>
-                    <span class="place">91Mobiles</span>
-                    <span class="location">Gurgaon, Haryana, India</span>
-                </header>
-                <div>
-                    <ul>
-                        <li> Worked as full stack developer for 91mobiles.com, killerfeatures.com, and saasworthy.com.
-                             </li>
-                        <li> Developed and managed price comparision tools for 91mobiles.com
-                            and many more internal tools</li>
-                        <li>Technologies used: Java, Spring Framework, MongoDb, Redis, Elasticsearch, Python-Scrapy, Javascript, jQuery, Angular2,
-                            Bootstrap</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </section>
-    <section class="main-block">
-        <h2>
-            <i class="fa fa-folder-open"></i> Selected Projects
-        </h2>
-        <section class="blocks">
-            <div class="date">
-                <span>2018</span><span>present</span>
-            </div>
-            <div class="decorator">
-            </div>
-            <div class="details">
-                <header>
-                    <h3>Decision Tree</h3>
-                    <span class="place">Airtel X Labs</span>
-                </header>
-                <div>
-                    <ul>
-                        <li>Backend for an automated Customer Query Resolution Tool, API integrator tool for internal usage.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="blocks">
-            <div class="date">
-                <span>2017</span><span>2018</span>
-            </div>
-            <div class="decorator">
-            </div>
-            <div class="details">
-                <header>
-                    <h3>REST Backend APIs</h3>
-                    <span class="place">91Digital Web Pvt Ltd</span>
-                </header>
-                <div>
-                    <ul>
-                        <li>Backend APIs for 91MOBILES website, app, mobile-site and subsedries as well, SAASWORTHY.COM KILLERFEATURES.COM</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="blocks">
-            <div class="date">
-                <span>2016</span>
-            </div>
-            <div class="decorator">
-            </div>
-            <div class="details">
-                <header>
-                    <h3>Contextual Segmentation</h3>
-                    <span class="place">91Mobiles</span>
-                </header>
-                <div>
-                    <ul>
-                        <li>A panel to manage customized and contextual mailers/notifications through sendgrid which provides analytics and
-                         mailer performance metrix to improve automated content by picking segment based audience to target so that maximum relevant content could get served.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="blocks">
-            <div class="date">
-                <span>2015</span>
-            </div>
-            <div class="decorator">
-            </div>
-            <div class="details">
-                <header>
-                    <h3>SPECSCORE</h3>
-                    <span class="place">91Mobiles</span>
-                </header>
-                <div>
-                    <ul>
-                        <li>A project to assign a score to each product listed on the site (91mobiles), 'Algo based quality unit' for each product, so that users can get to know which is better.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </section>
-    <!--<section class="main-block concise">
-        <h2>
-            <i class="fa fa-graduation-cap"></i> Education
-        </h2>
-        <section class="blocks">
-            <div class="date">
-                <span>2011</span><span>2015</span>
-            </div>
-            <div class="decorator">
-            </div>
-            <div class="details">
-                <header>
-                    <h3>B.Tech.(Hons) Computer Science</h3>
-                    <span class="place">JEC</span>
-                    <span class="location">Jaipur, Rajasthan India</span>
-                </header>
-                <div>7.17/10</div>
-                
-            </div>
-        </section>
-        <section class="blocks">
-            <div class="date">
-                <span>2009</span><span>2011</span>
-            </div>
-            <div class="decorator">
-            </div>
-            <div class="details">
-                <header>
-                    <h3>AISSCE (Class XII)</h3>
-                    <span class="place">JNV, Hurda</span>
-                    <span class="location">Bhilwara, Rajasthan, India</span>
-                </header>
-                <div>89.2%</div>
-            </div>
-        </section>
-        <section class="blocks">
-            <div class="date">
-                <span>2008</span>
-            </div>
-            <div class="decorator">
-            </div>
-            <div class="details">
-                <header>
-                    <h3>AISSE (Class X)</h3>
-                    <span class="place">AVM, Shahpura</span>
-                    <span class="location">Bhilwara, Rajasthan, India</span>
-                </header>
-                <div>93.4%</div>
-            </div>
-        </section>
-    </section>-->
-</section>
-
-
-<aside id="sidebar">
-    <div class="side-block" id="contact">
-        <h1>
-            Contact Info
-        </h1>
-        <ul>
-            <li><i class="fa fa-phone"></i> +918233366998</li>
-            <li><i class="fa fa-envelope"></i> prakharchhipa@gmail.com</li>
-            <li><i class="fa fa-linkedin"></i> linkedin.com/in/prakharchhipa</li>
-        </ul>
-    </div>
-    <div class="side-block" id="skills">
-        <h1>
-            Skills
-        </h1>
-        <ul>
-            <li><b>PROGRAMMING LANGUAGES</b></li>
-            <li>Java</li>
-            <li>Javascript</li>
-            <li>PHP</li>
-            <li>C</li>
-        </ul>
-        <ul>
-            <li><B>DATABASES</B></li>
-            <li>Redis</li>
-            <li>MongoDB</li>
-            <li>MySQL</li>
-            <li>Elasticsearch</li>
-        </ul>
-
-        <ul>
-            <li><B>FRAMEWORKS</B></li>
-            <li>Spring Framework - Java</li>
-            <li>jQuery - Javascript</li>
-            <li>Angular2 - Javascript</li>
-            <li>Bootstrap</li>
-        </ul>
-
-        <ul>
-            <li><B>VCS</B></li>
-            <li>git</li>
-        </ul>
-
-        <br>
-
-        <h1>
-            Eductaion
-        </h1>
-
-        <ul>
-            <li><B>B.Tech.(Hons)</B> - (2011-2015)</li>
-            <li>Computer Science</li>
-            <li>77.1%</li>
-            <li>JEC, Jaipur Rajasthan, India</li>
-        </ul>
-
-        <ul>
-            <li><B>Class XII</B> - (2011)</li>
-            <li>75%</li>
-            <li>JNV Bhilwara, Rajasthan, India</li>
-        </ul>
-
-        <ul>
-            <li><B>Class X</B>  - (2009)</li>
-            <li>82%</li> 
-            <li>AVM Bhilwara, Rajasthan, India</li>
-        </ul>
-
-    </div>
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-66360893-1', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-  
-</aside>
 </body>
+
 </html>

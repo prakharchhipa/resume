@@ -1,0 +1,19 @@
+<!-- summary -->
+<div class="category reference">
+  <div class="cat-title">
+    <span class="cat-name">Summary</span>
+    <span class="cat-head-line"></span>
+  </div>
+  <div class="cat-body">
+
+    {% for s in site.data.summary %}
+    <div class="listing">
+      <div class="list-item">
+        <span class="refer-text">{{ s.text }}</span>
+      </div>
+    </div>
+    {% endfor %}
+
+  </div>
+</div>
+<!-- end -->
