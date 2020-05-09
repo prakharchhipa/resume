@@ -1,9 +1,8 @@
 - title: Airtel WORK
   link: https://www.gsma.com/iot/wp-content/uploads/2020/03/Airtel-Making-Field-Operations-Faster-Case-Study-Final-March-2020-1.pdf
   points:
-    - desc: In this Field Workforce Management Platform, I've took ownership of several micro services, which handles authentication, authorization, communication(SMS/Email/Notifications), downstream integrations, approval engine and organization hierarchy.
+    - desc: In this Field Workforce Management Platform, I've took ownership of several micro services. Responsible for authentication, authorization, communication(SMS/Email/Notifications), downstream integrations, approval engine and organization hierarchy.
     - desc: Developed client jar to maintain standard logging across the project.
-    - desc: It enables features like Work Order Management, Timesheet Management, Real-time Communication, Access Control, Tenant/Org Management, Rule Engine, State Machine, Schedule & Dispatch, Integrations, Analytics Dashboard and Task Management.
 
 - title: Decision Tree
   link: https://medium.com/airtelxlabs/decision-tree-4951a38c1da2

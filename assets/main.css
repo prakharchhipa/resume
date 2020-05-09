@@ -85,6 +85,7 @@ a {
 .header-desc{
     float: left;
     text-align: left;
+    font-variant-caps: all-petite-caps;
     margin-top: 50px;
 }
 

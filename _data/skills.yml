@@ -20,6 +20,8 @@
       level: 3
     - name: elasticsearch
       level: 3
+    - name: MySQL
+      level: 3
 
 - title: Frameworks
   items:
@@ -30,6 +32,8 @@
     - name: Angular2
       level: 2
     - name: Bootstrap
+      level: 3
+    - name: Micro services
       level: 3
 
 - title: Misc
