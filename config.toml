@@ -1,6 +1,6 @@
 # Page settings
 
-baseURL = "http://prakharchhipa.in/"
+baseURL = "http://prakharchhipa.in/resume/"
 languageCode = "en"
 title = "Prakhar Chhipa Resume"
 theme = "hugo-devresume-theme"
