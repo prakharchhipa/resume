@@ -32,15 +32,15 @@ publishDir = "docs"
 
         [[params.contact.list]]
         icon = "fas fa-phone-square"
-        url = "tel:#"
+        url = "tel:+91-82333-66998"
         text = "+91-82333-66998"
         [[params.contact.list]]
         icon = "fas fa-envelope-square"
-        url = "mailto:#"
+        url = "mailto:prakharchhipa@gmail.com"
         text = "prakharchhipa@gmail.com"
         [[params.contact.list]]
         icon = "fas fa-globe"
-        url = "#"
+        url = "https://prakharchhipa.in"
         text = "https://prakharchhipa.in"
 
 
