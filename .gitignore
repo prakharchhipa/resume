@@ -1,7 +1,6 @@
 mocks/
 _site
-.jekyll-metadata
 local
 .idea
 *.iml
-.jekyll-cache
+deploy.sh
