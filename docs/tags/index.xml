@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Prakhar Chhipa Resume</title>
-    <link>http://prakharchhipa.in/resume/tags/</link>
+    <link>https://prakharchhipa.in/resume/tags/</link>
     <description>Recent content in Tags on Prakhar Chhipa Resume</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>PC</generator>
     <language>en</language>
     
-	<atom:link href="http://prakharchhipa.in/resume/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://prakharchhipa.in/resume/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
