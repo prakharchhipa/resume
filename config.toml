@@ -157,7 +157,7 @@ publishDir = "docs"
         company = "Airtel X Labs"
         details = "Senior developer having responsibilities of the design, development, and implementation of the back-end applications."
         [[params.experience.list.items]]
-        details = "Oversee the efficient use of production project budgets."
+        details = "Oversee the efficient use of production project resources."
         [[params.experience.list.items]]
         details = "Along with development supervise the assessment of various micro-services in order to ensure quality and accuracy of the back-end."
 
