@@ -1,0 +1,321 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.3 (22/9/2018)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% v1.3 author:
+% Zachary Taylor
+%
+% v1.3 repository:
+% https://github.com/ZDTaylor/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Add various styling and section options and allow for multiple pages smoothly.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.3:
+% 1. Removed MacFonts version as I have no desire to maintain it nor access to macOS
+% 2. Switched column ordering
+% 3. Changed font styles/colors for easier human readability
+% 4. Added, removed, and rearranged sections to reflect my own experience
+% 5. Hid last updated
+%
+% v1.2:
+% 1. Added publications in place of societies.
+% 2. Collapsed a portion of education.
+% 3. Fixed a bug with alignment of overflowing long last updated dates on the top right.
+%
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-reversed}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Prakhar Chhipa}{ %\urlstyle{same}\href{http://example.com}{example.com}| \href{http://example2.co}{example2.co}\\
+\href{mailto:prakharchhipa@gmail.com}{prakharchhipa@gmail.com} | \href{tel:+91-8233366998}{+91 82333 66998}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.60\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Airtel X Labs}
+\descript{| Lead Engineer }
+\location{May 2018 – Present | Gurugram, IN}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Senior developer having responsibilities of the design, development, and implementation of the back-end applications.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{91Mobiles}
+\descript{| Full Stack Developer }
+\location{Apr 2015 – May 2018 | Gurugram, IN}
+\begin{tightemize}
+\item Worked as a full stack developer, developed numerous applications(admin panels, websites, crawlers, dashboards, and tools).
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{WORK}
+\descript{| Field Workforce Management Platform}
+\location{2020 | Airtel X Labs}
+\begin{tightemize}
+\item Ownership of several micro services, responsible for authentication, authorization, communication(SMS/Email/Notifications), Downstream integration, approval engine and organization hierarchy. Developed client jar to maintain standard logging across the project.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Predictive DT}
+\descript{| Auto Diagnose and Resolution Platform}
+\location{2019 | Airtel X Labs}
+\begin{tightemize}
+\item Developed core backend engine of the application which enables workflow orchestration to solve problem scenarios. Lead predictive DT part, which helped \textbf{reducing average handling time of calls to 60 percent} at call centers.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{DRIFT}
+\descript{| Integration and Transformation Tool}
+\location{2018 | Airtel X Labs}
+\begin{tightemize}
+\item In a team of 2 people, developed back-end and front-end both for the application. JOLT used to transform the response. Client SDK developed so that any application can plug and play with this tool in the organization.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Price Comparison Catalog}
+\descript{| Product Finder and Global Search}
+\location{2017 | 91Mobiles}
+\begin{tightemize}
+\item Developed back-end, to handle elasticsearch filter queries dynamically through a panel was the key highlight of this project. Developed a crawling engine using Scrapy to get realtime prices from various websites for this feature. 
+\item Developed data source for the search engine having 20+ categories and list pages using elasticsearch to boost \textbf{recommendation and relevant search}.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Contextual Segmentation}
+\descript{| Notification Engine}
+\location{2016 | 91Mobiles}
+\begin{tightemize}
+\item Developed segmentation data resource pipeline as per customer interest using user event tracking data. Owned a panel complete development, which is used to target relevant audience using dynamic HTML creation and segmentation data with contextual content using sendgrid and GCM.
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Research}
+% \runsubsection{Cornell Robot Learning Lab}
+% \descript{| Researcher}
+% \location{Jan 2014 – Jan 2015 | Ithaca, NY}
+% Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.
+% \sectionsep
+
+% \runsubsection{Cornell Phonetics Lab}
+% \descript{| Head Undergraduate Researcher}
+% \location{Mar 2012 – May 2013 | Ithaca, NY}
+% Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research.
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COMMUNITY SERVICE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Community Service}
+
+% \begin{tabular}{rll}
+% 2013 -- 2018    & Tennessee     & St. Baldrick's Foundation\\
+% 2014 -- 2017	& Tennessee     & American Cancer Society's Hope Lodge\\
+% 2013 -- 2015    & Tennessee     & Habitat for Humanity\\
+% 2011 -- 2015    & Tennessee     & Special Olympics\\
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Societies}
+
+% \begin{tabular}{rll}
+% 2018 -- 2018    & National      & Association of Computing Machinery (ACM)\\
+% 2017 -- 2019	& National      & Scrum Alliance Certified ScrumMaster\\
+% 2015 -- 2019    & University    & Shackouls Honors College\\
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards}
+% \begin{tabular}{rll}
+% 2015        & 99\textsuperscript{th} percentile & National Merit Scholarship Finalist\\
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Publications}
+% \renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+% \bibliographystyle{abbrv}
+% \bibliography{publications}
+% \nocite{*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.33\textwidth}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+Java \\
+Python \\
+Spring-boot \\
+jQuery \\
+PostgreSQL \\
+MongoDB\\
+Elasticsearch \\
+Redis \\
+Angular2 \\
+ReactJS \\
+NodeJS \\
+JavaScript\\
+\sectionsep
+
+\subsection{Technology}
+Git/Github \\
+Linux \\
+Microservices \\
+RabbitMQ \\
+JIRA \\
+Agile \\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\subsection{JEC Jaipur}
+\descript{Bachelor of Technology in Computer Science Engineering}
+\location{ 2011 - 2015 }
+% College of Engineering \\
+\location{ 78 \% }
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Coursework}
+% \subsection{Graduate}
+% Analysis of Algorithms
+% \sectionsep
+
+% \subsection{Undergraduate}
+% Artificial Intelligence \\
+% {\footnotesize \textit{\textbf{(Teaching Assistant) }}} \\
+% AI Robotics \\
+% Operating Systems I \\
+% Calculus I-IV \\
+% Data Analysis I \\
+% Introduction to Probability \\
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Societies
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Societies}
+% Association for Computing Machinery (ACM)\\
+% Scrum Alliance Certified ScrumMaster\\
+% Shackouls Honors College\\
+% National Merit Scholarship Finalist \\
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+Github:// \href{https://github.com/prakharchhipa}{\bf prakharchhipa} \\
+LinkedIn://  \href{https://www.linkedin.com/in/prakharchhipa}{\bf prakharchhipa}
+\sectionsep
+
+\end{minipage}
+\end{document}  \documentclass[]{article}
